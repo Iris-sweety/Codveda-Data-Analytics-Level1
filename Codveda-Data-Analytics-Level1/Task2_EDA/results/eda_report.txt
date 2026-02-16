@@ -1,0 +1,80 @@
+
+================================================================================
+EXPLORATORY DATA ANALYSIS (EDA) REPORT - IRIS DATASET
+================================================================================
+Date: 2026-02-16 13:00:44
+Internship: Codveda Technologies - Data Analytics Level 1:Task 2
+Analyst: Maddie Batalong
+
+1. DATASET OVERVIEW
+================================================================================
+Total Observations: 150
+Total Features: 5
+Numeric Features: 4
+Categorical Features: 1
+
+Features:
+  - sepal_length (float64)
+  - sepal_width (float64)
+  - petal_length (float64)
+  - petal_width (float64)
+  - species (object)
+
+2. DATA QUALITY
+================================================================================
+Missing Values: 0
+Duplicates: 3
+Completeness: 100.00%
+
+3. DESCRIPTIVE STATISTICS
+================================================================================
+       sepal_length  sepal_width  petal_length  petal_width
+count    150.000000   150.000000    150.000000   150.000000
+mean       5.843333     3.054000      3.758667     1.198667
+std        0.828066     0.433594      1.764420     0.763161
+min        4.300000     2.000000      1.000000     0.100000
+25%        5.100000     2.800000      1.600000     0.300000
+50%        5.800000     3.000000      4.350000     1.300000
+75%        6.400000     3.300000      5.100000     1.800000
+max        7.900000     4.400000      6.900000     2.500000
+
+4. CORRELATION MATRIX
+================================================================================
+              sepal_length  sepal_width  petal_length  petal_width
+sepal_length      1.000000    -0.109369      0.871754     0.817954
+sepal_width      -0.109369     1.000000     -0.420516    -0.356544
+petal_length      0.871754    -0.420516      1.000000     0.962757
+petal_width       0.817954    -0.356544      0.962757     1.000000
+
+5. CLASS DISTRIBUTION
+================================================================================
+species
+setosa        50
+versicolor    50
+virginica     50
+
+6. KEY INSIGHTS
+================================================================================
+- Dataset contains 150 observations of iris flowers
+- 4 numerical measurements per observation
+- 3 different species in the dataset
+- Data quality: Excellent (no missing values)
+- Classes are well-balanced for classification tasks
+
+7. VISUALIZATIONS GENERATED
+================================================================================
+✓ distribution_histograms.png - Feature distributions
+✓ box_plots.png - Outlier detection
+✓ scatter_plots.png - Pairwise relationships
+✓ correlation_heatmap.png - Feature correlations
+
+8. RECOMMENDATIONS
+================================================================================
+- Dataset is ready for classification modeling
+- Features show good correlations with target variable
+- No major preprocessing required
+- Suitable for supervised learning algorithms
+
+================================================================================
+ANALYSIS COMPLETED SUCCESSFULLY
+================================================================================
