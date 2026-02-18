@@ -58,10 +58,10 @@ python eda_analysis.py
 ## 👩‍💻 Author
 
 **MADDIE BATALONG**  
-Data Analytics Intern @ Codveda Technology
+Data Analytics Intern @ Codveda Technologies
 
 📧 maddiebatalong@gmail.com  
-💼 [LinkedIn](https://linkedin.com/in/Maddie-Batalong)
+💼 [LinkedIn](https://linkedin.com/in/maddie-batalong)
 
 ---
 
@@ -75,4 +75,5 @@ Data Analytics Intern @ Codveda Technology
 ## 📌 Tags
 
 `#DataAnalytics` `#Python` `#DataScience` `#Codveda` `#Internship`
+
 
