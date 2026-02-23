@@ -8,20 +8,20 @@ print(f"Dataset shape: {df.shape}")
 #RENAMING COLUMNS
 if df.shape[1] == 14:
     column_mapping = {
-        0: 'CRIM', #Crime rate
-        1: 'ZN', #Proportion of residential land zoned for lots over 25,000 sq.ft.
-        2: 'INDUS', #Proportion of non-retail business acres per town
-        3: 'CHAS', #Charles River dummy variable (= 1 if tract bounds river; 0 otherwise)
-        4: 'NOX', #Nitric oxides concentration (parts per 10 million)
-        5: 'RM',#Average number of rooms per dwelling
-        6: 'AGE',#Proportion of owner-occupied units built prior to 1940
-        7: 'DIS',#Weighted distances to five Boston employment centres
-        8: 'RAD',#Index of accessibility to radial highways
-        9: 'TAX',#Full-value property-tax rate per $10,000
-        10: 'PTRATIO',#Pupil-teacher ratio by town
-        11: 'B',#1000(Bk - 0.63)^2 where Bk is the proportion
-        12: 'LSTAT',#Percentage of lower status of the population
-        13: 'MEDV'#Median value of owner-occupied homes in $1000's
+        0: 'CRIM', 
+        1: 'ZN', 
+        2: 'INDUS', 
+        3: 'CHAS', 
+        4: 'NOX', 
+        5: 'RM',
+        6: 'AGE',
+        7: 'DIS',
+        8: 'RAD',
+        9: 'TAX',
+        10: 'PTRATIO',
+        11: 'B',
+        12: 'LSTAT',
+        13: 'MEDV'
     }
     df.rename(columns=column_mapping, inplace=True)
     print(f"\nNew column names: {list(df.columns)}")
@@ -92,3 +92,4 @@ print(f"\nFinal dataset preview:\n{df.head()}")
 output_path = r'Task1_Data_Cleaning\results\cleaned_house_data.csv'
 df.to_csv(output_path, index=False)
 print(f"\nCleaned dataset successfully saved to: {output_path}")
+
