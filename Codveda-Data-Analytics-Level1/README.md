@@ -20,11 +20,14 @@ Two data analytics projects demonstrating data cleaning, exploratory analysis, a
 - **Methods:** Statistics, correlations, 4 visualizations
 - **Result:** Strong correlations identified (r=0.96)
 
+### [Task 3: Basic Data Visualisation](Task3_Data_viz/)
+-- **Dataset:** Boston Housing
+
 ---
 
 ## 🛠️ Tech Stack
 
-- Python 3.14
+- Python 3.13
 - pandas, numpy
 - matplotlib, seaborn
 
@@ -42,6 +45,10 @@ python cleaning.py
 # Task 2
 cd Task2_EDA
 python eda_analysis.py
+
+# Task 3
+cd Task3_Data_viz
+python data_visualisation.py
 ```
 
 ---
@@ -52,6 +59,7 @@ python eda_analysis.py
 |------|---------|--------|------------|
 | 1 | Boston Housing | Cleaned CSV + Report | 99% quality |
 | 2 | Iris | 4 Visualizations + Report | 0.96 correlation |
+| 3 | Boston Housing | 4 Visualizations | 
 
 ---
 
@@ -75,6 +83,7 @@ Data Analytics Intern @ Codveda Technologies
 ## 📌 Tags
 
 `#DataAnalytics` `#Python` `#DataScience` `#Codveda` `#Internship`
+
 
 
 
