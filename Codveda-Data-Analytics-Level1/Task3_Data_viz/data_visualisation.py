@@ -7,7 +7,7 @@ import seaborn as sns
 df=pd.read_csv('Task1_Data_Cleaning\\results\\cleaned_house_data.csv')
 df['price_bin'] = pd.cut(df['MEDV'], bins=5,
                                 labels=['<$15k', '$15-25k', '$25-35k', '$35-45k', '>$45k'])
-# --- 4. Bar Plot : nombre de maisons par tranche de prix ---
+# Bar Plot : nombre de maisons par tranche de prix
 counts = df['price_bin'].value_counts().sort_index()
 
 fig, ax = plt.subplots(figsize=(8, 5))
@@ -22,7 +22,7 @@ plt.tight_layout()
 plt.savefig('Task3_Data_viz/housing_bar.png', dpi=150, bbox_inches='tight')
 plt.show()
 
-# --- 5. Scatter Plot : RM vs MEDV coloré par LSTAT ---
+#Scatter Plot : RM vs MEDV coloré par LSTAT
 fig, ax = plt.subplots(figsize=(7, 5))
 sc = ax.scatter(df['RM'], df['MEDV'],
                 c=df['LSTAT'], cmap='RdYlGn_r', alpha=0.7, edgecolors='white', s=60)
@@ -36,7 +36,7 @@ plt.tight_layout()
 plt.savefig('Task3_Data_viz/housing_scatter.png', dpi=150, bbox_inches='tight')
 plt.show()
 
-# --- 6. Line Chart : prix médian trié (tendance croissante) ---
+#Line Chart : prix médian trié (tendance croissante)
 fig, ax = plt.subplots(figsize=(10, 4))
 sorted_medv = df['MEDV'].sort_values().reset_index(drop=True)
 ax.plot(sorted_medv, color='#1976D2', linewidth=1.5, label='MEDV trié')
@@ -51,4 +51,4 @@ plt.tight_layout()
 plt.savefig('Task3_Data_viz/housing_line.png', dpi=150, bbox_inches='tight')
 plt.show()
 
-print("\n✅ Tous les plots exportés dans le dossier /plots")
+
